@@ -1,16 +1,11 @@
 # kc (Kubernetes Clusters)
 
 ## Description
-When you're using a bunch of clusters it can become a hassle to choose the correct and setting it to your kubeconfig.
-This tries to make life easier by providing a binary file you can run and it will show the clusters available inside of your `$HOME/.kube/kc/` folder.
-
-## Usage
-The variable
+When you're working with different kubernetes clusters it can become a hassle to keep changing the `KUBECONFIG` environment variable when you need to switch to a different cluster.
+This tries to make life easier by providing a binary file that shows the clusters available inside of your `$HOME/.kube/kc/` folder. You can choose one of these clusters and it will copy the command to your clipboard.
 
 ## Installation
-You can install it in two ways right now.
-
-1. Download the binary file available on github 
-2. Download / clone this repo and building it with `go build .`
-
-After that you can use the `kc` executable. I recommend putting it in your `$PATH` (e.g. `$HOME/bin` foler) so you can run `kc` from everywhere.
+1. Download the binary file available on github
+2. Put it in your `$PATH` (e.g. `$HOME/bin` folder)
+3. Go to your `.kube` directory and make a new folder called `kc` (e.g. `$HOME/.kube/kc`)
+4. Put your cluster config in this new `kc` folder
